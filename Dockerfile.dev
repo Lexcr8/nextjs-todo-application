@@ -1,0 +1,22 @@
+# Development Dockerfile for Next.js
+FROM node:14-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy the application
+COPY . .
+
+# Expose the default Next.js port
+EXPOSE 3000
+
+# Set environment variables
+ENV NODE_ENV=development
+
+# Start the development server
+CMD ["npm", "run", "dev"]
