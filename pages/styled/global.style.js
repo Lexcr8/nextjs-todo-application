@@ -1,4 +1,4 @@
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from "styled-components";
 
 injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,600&subset=latin-ext');
@@ -12,7 +12,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     background: hsl(0, 1%, 81%);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'inter', sans-serif;
   }
 
   .container {
